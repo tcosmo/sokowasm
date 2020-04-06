@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Sokowasm!</title>
+    <style>
+      body {
+        background-color: #202020;
+      }
+
+      #summary {
+        color: white;
+      }
+
+      #won {
+        height: 200px;
+        width: 400px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+        color: white;
+      }
+
+      #sokowasm-canvas {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <script src="./bootstrap.js"></script>
+    <div id="summary" style="display: none;">Hello</div>
+
+    <div id="won" style="display: none;"><h1>You Won!!</h1></div>
+    <canvas style="" id="sokowasm-canvas"></canvas>
+
+    
+    <div style="display:none;">
+      <img id="img-wall" src="images/wall.jpg">
+    </div>
+    <div style="display:none;">
+      <img id="img-goal" src="images/goal.png">
+    </div>
+    <div style="display:none;">
+      <img id="img-box" src="images/box.jpg">
+    </div>
+    <div style="display:none;">
+      <img id="img-box-ok" src="images/box_ok.jpg">
+    </div>
+    <div style="display:none;">
+      <img id="img-player-up" src="images/player_up.png">
+    </div>
+    <div style="display:none;">
+      <img id="img-player-down" src="images/player_down.png">
+    </div>
+    <div style="display:none;">
+      <img id="img-player-right" src="images/player_right.png">
+    </div>
+    <div style="display:none;">
+      <img id="img-player-left" src="images/player_left.png">
+    </div>
+  </body>
+</html>
